@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warung Makan - Makanan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="makanan.html">Makanan</a></li>
+                <li><a href="minuman.html">Minuman</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Daftar Makanan</h1>
+        <section class="featured-products">
+            <div class="product-grid">
+                <div class="product">
+                    <img src="images/nasi gor.jpg" alt="Nasi Goreng">
+                    <h3>Nasi Goreng</h3>
+                    <p>Harga: Rp30.000</p>
+                    <button onclick="addToCart('Nasi Goreng', 30000)">Tambah ke Keranjang</button>
+                </div>
+                <div class="product">
+                    <img src="images/ayam.jpg" alt="Ayam Penyet">
+                    <h3>Ayam Penyet</h3>
+                    <p>Harga: Rp40.000</p>
+                    <button onclick="addToCart('Ayam Penyet', 40000)">Tambah ke Keranjang</button>
+                </div>
+                <div class="product">
+                    <img src="images/sate.jpg" alt="Sate Ayam">
+                    <h3>Sate Ayam</h3>
+                    <p>Harga: Rp35.000</p>
+                    <button onclick="addToCart('Sate Ayam', 35000)">Tambah ke Keranjang</button>
+                </div>
+                <div class="product">
+                    <img src="images/mie.jpg" alt="Mie Ayam">
+                    <h3>Mie Ayam</h3>
+                    <p>Harga: Rp25.000</p>
+                    <button onclick="addToCart('Mie Ayam', 25000)">Tambah ke Keranjang</button>
+                </div>
+                <div class="product">
+                    <img src="images/renang.jpg" alt="Rendang">
+                    <h3>Rendang</h3>
+                    <p>Harga: Rp50.000</p>
+                    <button onclick="addToCart('Rendang', 50000)">Tambah ke Keranjang</button>
+                </div>
+                <div class="product">
+                    <img src="images/gado.jpg" alt="Gado Gado">
+                    <h3>Gado-Gado</h3>
+                    <p>Harga: Rp20.000</p>
+                    <button onclick="addToCart('Gado-Gado', 20000)">Tambah ke Keranjang</button>
+                </div>
+            </div>
+        </section>
+       
+        <section class="cart">
+            <h2>Keranjang Belanja</h2>
+            <div id="cart-items"></div>
+            <p id="total-price">Total: Rp0</p>
+            <button onclick="checkout()">Checkout</button>
+        </section>
+      
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Subayub</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
